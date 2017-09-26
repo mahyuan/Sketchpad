@@ -8,10 +8,26 @@
 </head>
 <body>
     <div class="actions">
-        <label><input type="radio" name="penType" value="pen" checked>画笔</label>
-        <label><input type="radio" name="penType" value="eraser">橡皮擦</label>
-        <label><i id="save">保存</i></label>
-        <label><i id="clearAll">清除</i></label>
+        <label><input type="radio" name="penType" value="pen" checked>Draw</label>
+        <label><input type="radio" name="penType" value="eraser">Clean</label>
+        <button id="save">Save</button>
+        <button id="clearAll">ClearAll</button>
+        <select id="selWidth">
+            <option value="1">1px</option>
+            <option value="3">3px</option>
+            <option value="5">5px</option>
+            <option value="7">7px</option>
+            <option value="9" selected="selected">9px</option>
+            <option value="11">11px</option>
+        </select>
+        <select id="selColor">
+            <option value="black">black</option>
+            <option value="blue" selected="selected">blue</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="yellow">yellow</option>
+            <option value="gray">gray</option>
+        </select>
     </div>
     <canvas id="canvas"></canvas>
     <script src="./main.js"></script>

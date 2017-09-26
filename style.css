@@ -13,3 +13,41 @@
     width:100%;
     padding: 4px;
 }
+label{
+    position: relative;
+    width:30px;
+    height: 15px;
+    line-height: 15px;
+    padding:1px;
+    padding-left:15px;
+    font-size:10px;
+    color:#fff;
+    background: #87ab6d;
+    border-radius: 3px;
+}
+input{
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 12px;
+}
+button{
+    display: inline-block;
+    padding: 2px;
+    background:#87ab6d;
+    outline: none;
+    color:#fff;
+    border-radius: 3px;
+}
+select{
+    width: 50px;
+    color:#fff;
+    background:#87ab6d;
+}
+select>option{
+    display: block;
+    width:30px;
+    font-size: 14px;
+    /*background: #b3c5a6;*/
+    border-bottom: 1px solid #000;
+}

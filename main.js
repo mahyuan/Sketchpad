@@ -15,12 +15,19 @@ canvas.addEventListener('touchmove', function(e){
     let {pageX, pageY} = e.touches[0]
     // let pageX = e.touches[0].pageX
     // let pageY = e.touches[0].pageY
+    let selColor = document.querySelector('#selColor').value
+    let selWidth = document.querySelector('#selWidth').value
+    console.log(selColor, selWidth)
 
     if(penType === 'pen'){
         if(previousPoint){
-            context.strokeStyle = 'green'
-            context.lineWidth = 4
-            context.fill = 'red'
+            // 设置画笔属性
+            context.lineCap = 'round'
+            context.lineJoin = 'round'
+
+            context.strokeStyle = selColor
+            context.lineWidth = selWidth
+            context.fill = selColor
             context.beginPath()
             context.moveTo(previousPoint.pageX, previousPoint.pageY)
             context.lineTo(pageX, pageY)
@@ -28,7 +35,7 @@ canvas.addEventListener('touchmove', function(e){
         }
         previousPoint = {pageX, pageY}
     }else if(penType === 'eraser'){
-        context.clearRect(pageX - 10, pageY - 10, 20, 20)
+        context.clearRect(pageX - selWidth/2, pageY - selWidth/2, selWidth, selWidth)
     }
 })
 canvas.addEventListener('touchend', function(){
