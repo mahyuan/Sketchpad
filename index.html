@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="actions">
-        <label><input type="radio" name="penType" value="pen" checked>Draw</label>
-        <label><input type="radio" name="penType" value="eraser">Clean</label>
-        <button id="save">Save</button>
-        <button id="clearAll">ClearAll</button>
-        <select id="selWidth">
+        <label class="item"><input type="radio" name="penType" value="pen" checked>Draw</label>
+        <label class="item"><input type="radio" name="penType" value="eraser">Clean</label>
+        <button class="item" id="save">Save</button>
+        <button class="item" id="clearAll">ClearAll</button>
+        <select name="width" class="item" id="selWidth">
             <option value="1">1px</option>
             <option value="3">3px</option>
             <option value="5">5px</option>
@@ -20,7 +20,7 @@
             <option value="9" selected="selected">9px</option>
             <option value="11">11px</option>
         </select>
-        <select id="selColor">
+        <select name="color" class="item" id="selColor">
             <option value="black">black</option>
             <option value="blue" selected="selected">blue</option>
             <option value="red">red</option>

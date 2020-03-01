@@ -1,5 +1,5 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 #canvas{
@@ -8,46 +8,54 @@
 }
 .actions{
     position: fixed;
-    bottom: 0;
-    left:3px;
-    width:100%;
+    /* bottom: 0; */
+    top: 0;
+    left: 3px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     padding: 4px;
 }
 label{
     position: relative;
-    width:30px;
-    height: 15px;
-    line-height: 15px;
-    padding:1px;
-    padding-left:15px;
-    font-size:10px;
-    color:#fff;
-    background: #87ab6d;
-    border-radius: 3px;
+    display: flex;
+    justify-content: center;
 }
-input{
-    position: absolute;
-    top: 4px;
-    left: 3px;
+label>input{
     width: 12px;
+    height: 12px;
+    margin-right: 3px;
 }
-button{
+button {
     display: inline-block;
-    padding: 2px;
-    background:#87ab6d;
     outline: none;
-    color:#fff;
-    border-radius: 3px;
 }
 select{
+    display: flex;
+
     width: 50px;
-    color:#fff;
-    background:#87ab6d;
 }
+
 select>option{
-    display: block;
-    width:30px;
-    font-size: 14px;
-    /*background: #b3c5a6;*/
-    border-bottom: 1px solid #000;
+    display: inline-block;
+    font-size: inherit;
+    width: 50px;
+    height: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid red;
+    background-color: #87ad11;
+}
+.item {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin: 5px 2px;
+    border: none;
+    border-radius: 3px;
+    padding: 0 5px;
+    font-size: 10px;
+    line-height: 20px;
+    box-sizing: border-box;
+    background:#87ab6d;
+    color: #fff;
 }
